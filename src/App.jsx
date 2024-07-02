@@ -9,6 +9,7 @@ import Categories from "./pages/Categories.jsx";
 import Topics from "./pages/Topics.jsx";
 import TopicDetails from "./pages/TopicDetails.jsx";
 import Profile from "./pages/Profile.jsx";
+import Register from "./pages/Register.jsx";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => {
               <Route path="categories/:categoryId/topics" element={<Topics />} />
               <Route path="topics/:topicId" element={<TopicDetails />} />
               <Route path="profile" element={<Profile />} />
+              <Route path="register" element={<Register />} />
               {/* Add more routes here as needed */}
             </Route>
           </Routes>
